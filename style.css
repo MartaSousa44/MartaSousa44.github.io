@@ -1,0 +1,223 @@
+
+  /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of the Reset */
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+
+}
+
+h1 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 5em;
+  margin-top: 2vw;
+	margin-bottom: 3vw;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 70px;
+  padding-top: 1em;
+  clear: right;
+}
+
+p {
+  clear:right;
+  font-family: 'Noto Serif', serif;
+  line-height: 1.7em;
+  }
+
+p.UP {
+    margin-bottom: 2em;
+}
+
+p.d {
+  padding-top: 1em;
+  }
+
+p.data {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 3em;
+  margin-top: .5em;
+}
+
+ul.indice  {
+	text-align: center;
+	}
+
+ul.indice li {
+	display: inline-block;
+	line-height: 3em;
+	}
+
+ul.indice li a {
+	color: #d1c4bd;
+  font-weight: 700;
+  border: 2px solid;
+  border-radius: 8px;
+	padding: 6px 4em;
+	margin: 1em;
+  text-decoration: none;
+}
+
+ul.indice li a:hover {
+  color: #FFF;
+  background-color: #d1c4bd;
+}
+
+figure {
+  float: right;
+  width: 50%;
+  padding-left: 4em;
+	padding-bottom: 4em;
+  font-size: 10px;
+}
+
+figure img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 500px;
+  }
+
+div.info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  margin-top: 4em;
+  max-width: 500px;
+  max-height: 200px;
+  overflow: scroll;
+  float: right;
+}
+
+div.info p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8em;
+  font-weight: 700;
+}
+
+div.info p.d {
+  font-weight: 400;
+  line-height:1.5em;
+}
+
+div.titulo {
+  margin-bottom: 5em;
+}
+
+
+ul.listas {
+  display: list-item;
+  line-height: 2em;
+}
+
+ul.listas li strong {
+   font-weight: 700;
+}
+
+cite {
+  font-style: italic;
+}
+
+cite:before, cite:after {
+	content: '"';
+}
+
+q:before {
+	content: "«"
+}
+
+q:after {
+	content: '»'
+}
+
+#tBtn {
+  color: #d1c4bd;
+  background-color: transparent;
+  font-weight: 700;
+  border: 2px solid;
+  border-radius: 8px;
+  display: none;
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  cursor: pointer; 
+  padding: 12px;
+  font-size: 18px;
+}
+
+#tBtn:hover {
+  color: #FFF;
+  background-color: #d1c4bd;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
