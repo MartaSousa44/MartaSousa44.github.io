@@ -1,0 +1,386 @@
+
+  /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of the Reset */
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(../font/Oswald-VariableFont_wght.ttf);
+  font-weight: 200 700;
+}
+
+body {
+	background-image: url(../img/blur.png);
+	background-size: auto auto;
+	background-repeat: no-repeat;
+	background-color: rgb(240, 240, 240);
+	color: #000;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 45px;
+	letter-spacing: -2px;
+	text-transform: uppercase;	
+}
+
+.n_img {
+	background-image: none;
+}
+
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}  
+
+.btn_hd {
+	background-color: transparent;
+    color: #000;
+    border: none;
+    outline: none;
+    float: left;
+	margin-left: 2%;
+}
+
+#esc2 {
+	border: none;
+	font-family: 'Helvetica', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+	text-align: center;
+    text-transform: uppercase;
+	vertical-align:super;
+}
+
+#esc {
+	display: none;
+}
+
+#hide {
+	color: #000;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-right: 2%;
+	text-transform: uppercase;	
+	float: right;
+}
+
+#opc {
+	display: block;
+	position: fixed;
+	font-family: Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	left: 35%;
+	bottom: 1em;
+	background-color:transparent;
+	color: #000;	
+	border: none;
+	outline: none;
+	margin: auto;	
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#info {
+	margin: auto;
+  	position: absolute;
+  	top: 50%;
+	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	transition: opacity 1s; 
+}
+
+#info.fade {
+	opacity: 0;
+  }
+
+  #transparente {
+	font-family: Helvetica, sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: -2px;
+	text-align: left;
+}
+
+#opc2 {
+	display: none;
+}
+
+#transparente2 {
+	display: none;
+}
+
+#pagina-privacy {
+	position: fixed;
+	width: 95%;
+	height: 95%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#conteudo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 95%;
+	transform: translate(-50%, -50%);
+}
+
+#fd {
+	font-size: 42px;
+	line-height: 70px;
+	animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+	  
+	0% {
+		font-weight: 700;
+	}
+	
+	50% {
+		font-weight: 400;
+	}
+	
+	100% {
+		font-weight: 700;
+  }
+}
+
+  .pc {
+	  display: none;
+  }
+
+
+  /* versões mobile mais compridas*/
+@media screen and (min-width: 365px) {
+
+	body{
+	font-size: 50px;
+	}
+
+	#esc2 {
+		font-size: 18px;
+	}
+
+	#hide {
+		font-size: 18px;
+	}
+
+	#opc {
+		font-size: 18px;
+		bottom: .5em;
+	}
+
+	#transparente a{
+		font-size: 70px;
+	}
+
+	#fd {
+		font-size: 50px;
+		line-height: 90px;
+	}
+}
+
+	/* layout para tablets */
+	@media screen and (min-width: 600px) and (max-width: 1024px) {
+	
+		#transparente a{
+			font-size: 140px;
+			line-height: 120px;
+		}
+
+		#esc2 {
+			font-size: 22px;
+			margin-top: .7em;
+		}
+		
+		#hide {
+			font-size: 22px;
+			margin-top: .7em;
+		}
+
+		#opc {
+			font-size: 22px;
+			bottom: .7em;
+		}
+
+		#fd {
+			font-size: 90px;
+			line-height: 130px;
+		}
+	}
+
+
+/* layout para desktop*/
+@media screen and (min-width: 1025px) {
+
+	body {
+	font-size: 50px;
+	letter-spacing: -1px;
+	}
+
+	#esc {
+	background-color:transparent;
+	color: #000;
+	display: block;
+	position: fixed;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 22px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;	
+	border: none;
+	outline: none;
+	margin: auto;	
+	padding-top: 1em;	
+	top: .40em;
+	left: 3%;
+	}
+
+	#esc2 {
+		display: none;
+	}
+
+	#hide {
+	color: #000;
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-align: right;
+	margin-right: 3%;
+	text-transform: uppercase;	
+	padding-top: 1em;
+	}
+
+	#opc {
+		display: none;
+	}
+
+	#transparente {
+		display: none;
+	}
+
+	#opc2 {
+		color: #000;
+		background-color: transparent;
+		display: block;
+		position: fixed;
+		font-family: Helvetica, sans-serif;
+		font-size: 22px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 1em;		
+		border: none;
+		outline: none;
+		margin: auto;			
+	}
+	
+	#info2  {
+		margin: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		transition: opacity 1s; 
+	}
+
+	#info2 a {
+		cursor: url('../img/cursor2.png'), auto;
+	}
+
+	#info2.fade {
+		opacity: 0;
+	}
+
+	#transparente2 {
+		display: block;
+		font-family: Helvetica, serif;
+		font-size: 150px;
+		font-weight: 800;
+		line-height: 120px;
+		letter-spacing: -4px;
+		text-align: left;
+	}
+	
+	#fd {
+		color: #000;
+		font-size: 90px;
+		line-height: 95px;
+	}
+
+	.pc {
+		display: inline-block;
+	}
+	
+	.mob {
+		display: none;
+	}
+}
