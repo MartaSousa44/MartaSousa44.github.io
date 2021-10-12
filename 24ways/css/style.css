@@ -253,6 +253,7 @@ p.rodape {
 		content: "'";
 	}
 
+
 	/* layout para tablets */
 	@media screen and (min-width: 600px) and (max-width: 1024px) {
 
@@ -517,32 +518,4 @@ p.rodape {
 	.container2 a:hover {
 		color: #DAFF00;
 	}
-
-	#tBtn {
-		background-color: transparent;
-		font-weight: 700;
-		position: fixed;
-		bottom: 30px; 
-		right: 40px; 
-		z-index: 99; 
-		cursor: pointer; 
-		font-size: 18px;
-		border: none;
-	  }
-	  
-	  .arrow {
-		  border: solid rgb(255, 255, 255);
-		  border-width: 0 4px 4px 0;
-		  display: inline-block;
-		  padding: 3px;
-		  width: 5px;
-		height: 5px;
-		}
-	  
-		.up {
-		  transform: rotate(-135deg);
-		  -webkit-transform: rotate(-135deg);
-		}
 }
-
-
