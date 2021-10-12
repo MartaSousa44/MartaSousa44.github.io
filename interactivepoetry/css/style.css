@@ -57,9 +57,9 @@ table {
 }
 
 body {
-	background-image: url(../img/blur.png);
+	/*background-image: url(../img/blur.png);
 	background-size: auto auto;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	background-color: rgb(240, 240, 240);
 	color: #000;
 	font-family: 'Oswald', sans-serif;
@@ -70,10 +70,19 @@ body {
 	text-transform: uppercase;	
 }
 
-.n_img {
-	background-image: none;
+.bg_img {
+	font-family: Helvetica, sans-serif;
+	position: absolute;
+	color: transparent;
+	text-shadow: 0 0 10px rgba(0, 0, 0, .3);
+	z-index: -1;
+	font-size: 65px;
+	line-height: 65px;
+	top: 45%;
+	left: 50%;
+	-ms-transform: translate(-50%, -45%);
+	transform: translate(-50%, -45%);
 }
-
 
 h1 {
 	font-family: 'Oswald', sans-serif;
@@ -221,6 +230,11 @@ a {
 	font-size: 50px;
 	}
 
+	.bg_img {
+		font-size: 75px;
+		line-height: 75px;
+	}
+
 	#esc2 {
 		font-size: 18px;
 	}
@@ -246,6 +260,16 @@ a {
 
 	/* layout para tablets */
 	@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+		.bg_img {
+			text-shadow: 0 0 20px rgba(0, 0, 0, .3);
+			font-size: 150px;
+			line-height: 150px;
+			top: 43%;
+			left: 50%;
+			-ms-transform: translate(-50%, -43%);
+			transform: translate(-50%, -43%);
+		}
 	
 		#transparente a{
 			font-size: 140px;
@@ -277,9 +301,18 @@ a {
 /* layout para desktop*/
 @media screen and (min-width: 1025px) {
 
-	body {
-	font-size: 50px;
-	letter-spacing: -1px;
+	.bg_img {
+		font-family: Helvetica, sans-serif;
+		position: absolute;
+		color: transparent;
+        text-shadow: 0 0 30px rgba(0, 0, 0, .3);
+		z-index: -1;
+		font-size: 250px;
+		line-height: 200px;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
 	}
 
 	#esc {
