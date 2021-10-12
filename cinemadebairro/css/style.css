@@ -51,29 +51,29 @@ table {
 /* End of the Reset */
 
 body {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
-
 }
 
 h1 {
   font-family: 'Montserrat', Helvetica, sans-serif;
   text-align: center;
   font-weight: 700;
-  font-size: 5em;
-  margin-top: 2vw;
+  font-size: 22px;
+  margin-top: 1em;
 	margin-bottom: 3vw;
 }
 
 h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 40px;
+  line-height: 42px;
   padding-top: 1em;
   clear: right;
 }
@@ -81,7 +81,6 @@ h2 {
 p {
   clear:right;
   font-family: 'Noto Serif', serif;
-  line-height: 1.7em;
   }
 
 p.UP {
@@ -95,18 +94,20 @@ p.d {
 p.data {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 1.5em;
-  margin-bottom: 3em;
-  margin-top: .5em;
+  font-size: 15px;
+  margin-bottom: 2em;
+  margin-top: .7em;
 }
 
 ul.indice  {
 	text-align: center;
+  margin-top: 1em;
 	}
 
 ul.indice li {
 	display: inline-block;
 	line-height: 3em;
+  margin: 2px;
 	}
 
 ul.indice li a {
@@ -114,21 +115,13 @@ ul.indice li a {
   font-weight: 700;
   border: 2px solid;
   border-radius: 8px;
-	padding: 6px 4em;
-	margin: 1em;
+	padding: 6px 1em;
   text-decoration: none;
 }
 
-ul.indice li a:hover {
-  color: #FFF;
-  background-color: #d1c4bd;
-}
-
 figure {
-  float: right;
-  width: 50%;
-  padding-left: 4em;
-	padding-bottom: 4em;
+  width: 100%;
+	padding-bottom: 3em;
   font-size: 10px;
 }
 
@@ -140,17 +133,17 @@ figure img {
 
 div.info {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
+  font-size: 15px;
   margin-top: 4em;
   max-width: 500px;
-  max-height: 200px;
+  max-height: 110px;
   overflow: scroll;
   float: right;
 }
 
 div.info p {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.8em;
+  line-height: 19px;
   font-weight: 700;
 }
 
@@ -163,10 +156,10 @@ div.titulo {
   margin-bottom: 5em;
 }
 
-
 ul.listas {
   display: list-item;
-  line-height: 2em;
+  line-height: 1.7em;
+  margin-bottom: 1.5em;
 }
 
 ul.listas li strong {
@@ -192,8 +185,8 @@ q:after {
 #tBtn {
   display: none;
   position: fixed;
-  bottom: 20px; 
-  right: 30px; 
+  bottom: 10px; 
+  right: 10px; 
   z-index: 99; 
   cursor: pointer; 
   border: none;
@@ -209,4 +202,145 @@ q:after {
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+
+	/* layout para tablets */
+	@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    body {
+    width: 85%;
+    font-size: 20px;
+    line-height: 22px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    h2 {
+      font-size: 70px;
+      line-height: 72px;
+    }
+    
+    ul.indice li {
+      margin: 2px 6px;
+      }
+    
+    ul.indice li a {
+      font-size: 22px;
+      padding: 6px 1.2em;
+    }
+
+    div.info {
+      margin-top: 4em;
+      margin-bottom: 2em;
+      max-width: 450px;
+      max-height: 140px;
+    }
+    
+    div.info p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 700;
+    }
+    
+    div.info p.d {
+      line-height: 28px;
+    }
+
+    p.d {
+      padding-top: .7em;
+      }
+
+      p.data {
+        font-size: 26px;
+      }
+
+      figure {
+        font-size: 18px;
+      }
+      
+      figure img {
+        max-width: none;
+        }
+  }
+
+/* layout para desktop*/
+@media screen and (min-width: 1025px) {
+
+body {
+  width: 80%;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: .7em;
+	margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+p.data {
+  font-size: 22px;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
+ul.indice  {
+	text-align: center;
+	}
+
+ul.indice li a {
+	padding: 6px 3.5em;
+	margin: .5em;
+}
+
+ul.indice li a:hover {
+  color: #FFF;
+  background-color: #d1c4bd;
+}
+
+figure {
+  float: right;
+  width: 50%;
+  padding-left: 4em;
+	padding-bottom: 4em;
+  font-size: 12px;
+}
+
+div.info {
+  max-height: 200px;
+}
+
+div.info p {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+div.info p.d {
+  line-height:26px;
+}
+
+ul.listas {
+  line-height: 26px;
+  margin-bottom: 0;
+}
+
+#tBtn {
+  bottom: 20px; 
+  right: 30px; 
+  
+}
+
+.arrow {
+  width: 7px;
+  height: 7px;
+}
 }
