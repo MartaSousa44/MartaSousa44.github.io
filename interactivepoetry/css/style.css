@@ -84,6 +84,7 @@ body {
 	transform: translate(-50%, -45%);
 }
 
+
 h1 {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
@@ -305,7 +306,7 @@ a {
 		font-family: Helvetica, sans-serif;
 		position: absolute;
 		color: transparent;
-        text-shadow: 0 0 30px rgba(0, 0, 0, .3);
+        text-shadow: 0 0 30px rgba(0, 0, 0, .4);
 		z-index: -1;
 		font-size: 250px;
 		line-height: 200px;
@@ -313,6 +314,10 @@ a {
 		left: 50%;
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
+	}
+
+	.second {
+		margin-left: .7em;
 	}
 
 	#esc {
