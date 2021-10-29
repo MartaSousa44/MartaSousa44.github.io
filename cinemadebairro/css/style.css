@@ -287,6 +287,16 @@ h2 {
   font-size: 70px;
 }
 
+::-webkit-scrollbar {
+  height: 5px;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(44, 44, 44, 0.1); 
+  border-radius: 20px;
+}
+
 p.data {
   font-size: 22px;
   margin-top: 1.5em;
